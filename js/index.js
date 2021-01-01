@@ -1,10 +1,4 @@
-/*!
- * Webflow: Front-end site library
- * @license MIT
- * Inline scripts may access the api using an async handler:
- *   var Webflow = Webflow || [];
- *   Webflow.push(readyFunction);
- */
+
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -209,7 +203,7 @@ var check = function (it) {
   return it && it.Math == Math && it;
 };
 
-// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
+
 module.exports =
   // eslint-disable-next-line no-undef
   check(typeof globalThis == O && globalThis) ||
@@ -373,15 +367,7 @@ module.exports = isObjectLike;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
- // @wf-will-never-add-flow-to-this-file
 
-/* globals window, document, navigator, WEBFLOW_ENV_TEST */
-
-/* eslint-disable no-var */
-
-/**
- * Webflow: Core site library
- */
 
 var Webflow = {};
 var modules = {};
@@ -400,7 +386,6 @@ var destroyed = false;
 tram.config.hideBackface = false;
 tram.config.keepInherited = true;
 /**
- * Webflow.define - Define a named module
  * @param  {string} name
  * @param  {function} factory
  * @param  {object} options
@@ -417,7 +402,6 @@ Webflow.define = function (name, factory, options) {
   return instance;
 };
 /**
- * Webflow.require - Require a named module
  * @param  {string} name
  * @return {object}
  */
