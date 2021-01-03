@@ -1,29 +1,26 @@
 
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
+ (function(modules) { 
+
+ 	var installedModules = {};
+
+ 	function __webpack_require__(moduleId) {
+
+ 		
+ 		if(installedModules[moduleId]) {
+ 			return installedModules[moduleId].exports;
+ 		}
+ 	
+ 		var module = installedModules[moduleId] = {
+ 			i: moduleId,
+ 			l: false,
+ 			exports: {}
+ 		};
+
+ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+
+ 		
+ 		module.l = true;
+
 /******/ 		return module.exports;
 /******/ 	}
 /******/
@@ -48,12 +45,7 @@
 /******/ 		}
 /******/ 		Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
+
 /******/ 	__webpack_require__.t = function(value, mode) {
 /******/ 		if(mode & 1) value = __webpack_require__(value);
 /******/ 		if(mode & 8) return value;
@@ -198,7 +190,7 @@ exports.IX2EngineConstants = IX2EngineConstants;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {var O = 'object';
+(function(global) {var O = 'object';
 var check = function (it) {
   return it && it.Math == Math && it;
 };
@@ -221,10 +213,9 @@ module.exports =
 
 var freeGlobal = __webpack_require__(89);
 
-/** Detect free variable `self`. */
 var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
 
-/** Used as a reference to the global object. */
+
 var root = freeGlobal || freeSelf || Function('return this')();
 
 module.exports = root;
