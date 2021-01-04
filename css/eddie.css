@@ -778,9 +778,10 @@
 }
 
 .footer {
-  height: 422px;
+  height: 15px;
   padding: 80px 72px;
   background-color: #181823;
+  text-align: center;
 }
 
 .footer-logo {
