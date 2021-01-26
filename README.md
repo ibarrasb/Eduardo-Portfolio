@@ -1,3 +1,3 @@
 # Eduardo-Portfolio
 My personal portfolio
-https://ibarrasb.github.io/Eduardo-Portfolio/
+https://dashboard.heroku.com/apps/eduardo-ibarra-portfolio/settings
