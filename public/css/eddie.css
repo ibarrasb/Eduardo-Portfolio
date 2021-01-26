@@ -458,7 +458,7 @@
 
 .skills-section {
   margin-top: 140px;
-  padding: 120px 72px 150px;
+  padding: 400px 72px 150px;
   grid-auto-columns: 1fr;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -1073,7 +1073,10 @@
     grid-row-gap: 0px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+   
   }
+
+  
 
   .wrapper.grid-3_col {
     -webkit-box-align: stretch;
@@ -1170,7 +1173,7 @@
   }
 
   .mid_left-block {
-    height: 450px;
+    /* height: 450px; */
     padding: 48px 20px;
   }
 
@@ -1187,6 +1190,7 @@
   }
 
   .skills-section {
+    margin-top: 10px;
     padding: 64px 20px;
   }
 
